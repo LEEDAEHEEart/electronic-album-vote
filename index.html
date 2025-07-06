@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 전자 앨범</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="album-container">
+        <div class="page active" id="page1">
+            <h2>사진 1</h2>
+            <img src="images/1.jpg" alt="첫 번째 사진">
+            <p>이 사진에 대해 투표해주세요!</p>
+            <div class="vote-options">
+                <button class="vote-button" data-page="1" data-option="좋아요">👍 좋아요</button>
+                <button class="vote-button" data-page="1" data-option="별로예요">👎 별로예요</button>
+            </div>
+            <p class="vote-result" id="result-page1">아직 투표가 없습니다.</p>
+            <button class="nav-button next-button" data-target="page2">다음 사진으로</button>
+        </div>
+
+        <div class="page" id="page2" style="display:none;">
+            <h2>사진 2</h2>
+            <img src="images/2.jpg" alt="두 번째 사진">
+            <p>이 사진에 대해 투표해주세요!</p>
+            <div class="vote-options">
+                <button class="vote-button" data-page="2" data-option="멋져요">✨ 멋져요</button>
+                <button class="vote-button" data-page="2" data-option="평범해요">😐 평범해요</button>
+            </div>
+            <p class="vote-result" id="result-page2">아직 투표가 없습니다.</p>
+            <button class="nav-button prev-button" data-target="page1">이전 사진으로</button>
+            <button class="nav-button next-button" data-target="page3">다음 사진으로</button>
+        </div>
+
+        <div class="page" id="page3" style="display:none;">
+            <h2>사진 3</h2>
+            <img src="images/photo3.jpg" alt="세 번째 사진">
+            <p>이 사진에 대해 투표해주세요!</p>
+            <div class="vote-options">
+                <button class="vote-button" data-page="3" data-option="최고에요">🤩 최고에요</button>
+                <button class="vote-button" data-page="3" data-option="음...">🤔 음...</button>
+            </div>
+            <p class="vote-result" id="result-page3">아직 투표가 없습니다.</p>
+            <button class="nav-button prev-button" data-target="page2">이전 사진으로</button>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
